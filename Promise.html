@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+    <script>
+        let countvalue = new Promise((resolve,reject) => {
+            let tricket = false;
+            if(tricket){
+                resolve();
+                // console.log("promise resolved successfully ");
+            }
+            else{
+                reject();
+                // console.log("promise error");
+            }
+        });
+
+        countvalue
+        .then((res) => {
+            console.log("promise resolved successfully  ");
+        })
+        .catch((err) => {
+            console.log("promise error");
+        })
+    </script>
+</body>
+</html>

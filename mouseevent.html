@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+        width: 300px;
+        height: 70px;
+        border: 1px solid black;
+}
+</style>
+<body>
+    
+<div class="box"  id="box1">Click Event</div><br><br>
+<div class="box" id="box2"> hover over me </div><br><br>
+<div class="box" id="box3"> hold mouse down</div><br><br>
+<div class="box" id="box4"> mouse up  </div><br>
+    
+</body>
+<script>
+    
+        //  click event
+        document.getElementById("box1").addEventListener("click",function(){
+        alert("box clicked!")
+      })  
+
+        //  mouseover event
+        document.getElementById("box2").addEventListener("mouseover",function(){
+                this.style.backgroundColor = "red";
+        })  
+        //  mouseout event
+        document.getElementById("box2").addEventListener("mouseout",function(){
+                this.style.backgroundColor = "yellow";
+        })
+ 
+         //mouseup event
+         document.getElementById("box3").addEventListener("mouseup",function(){
+                this.style.backgroundColor = "darkblue";
+        })
+
+         //mouseup event
+             document.getElementById("box4").addEventListener("mouseup",function(){
+                    alert("mouse released!")
+            })
+
+
+</script>
+</html>

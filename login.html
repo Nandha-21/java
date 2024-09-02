@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="form(event)">
+        <fieldset>
+            <legend><b style="font-size: 25px; color: blueviolet; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Login Form</b></legend>
+            <label for="username" style="font-size: 20px; font-weight: bold;">Username:&nbsp;</label>
+            <input type="username" name="username" id="username" ><br><br>
+            <label for="password" style="font-size: 20px; font-weight: bold;">Password:&nbsp;</label>
+            <input type="password" name="password" id="password" ><br><br>
+            <label for="password" style="font-size: 20px; font-weight: bold;">Confirm Password:</label>
+            <input type="password" name="password" id="confirmpassword" onchange="demo1()" ><br><br>
+            
+            <label for="name" style="font-size: 20px; font-weight: bold;">OTP:</label>
+            <input type="text" name="name" id="otp" ><br><br>
+
+            <button>submit</button><br>
+            <!-- <button onclick="demo()">OTP</button> -->
+
+            </fieldset>
+        </form>
+        <script>
+            function form(event){
+                event.preventDefault()
+                 var a = document.getElementById("username").value
+                var b = document.getElementById("password").value
+                var x = document.getElementById("otp").value
+
+                // console.log(a,b);
+        if (a == "nandha" && b == "12345" && x == y){
+                window.location.assign("log1.html")
+                alert("success")
+
+                }
+                else{
+                    alert("fail")
+                }
+                localStorage.setItem("name",a);
+                localStorage.setItem("password",b)
+            }
+
+            // var y =(Math.trunc(Math.random()*1000000));
+            // function demo1(){
+            // console.log(y);
+                   
+            // }
+                                //OR
+            // var y =(Math.trunc(Math.random()*1000000));
+            // var z = localStorage.getItem("otp");
+            // function demo1(){
+            //         localStorage.setItem("otp",y);
+                    
+            //         console.log(y);
+                    
+            // }
+
+                function demo1(){
+                    setTimeout(myGreeting,4000);
+                }
+        </script>
+        
+    </body>
+    
+</html>

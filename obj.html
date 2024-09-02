@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let sample = {}
+        // sample.name = "nandha"
+        // sample.age = 20
+        // console.log(sample);
+        // sample.myfun=function(){
+        //     console.log("hello");
+            
+        // }
+        // // console.log(sample.myfun());
+        // sample.myfun();
+        
+    function person(name,age){
+        this.name=name;
+        this.age=age;
+        console.log(this.name);
+    }
+    const person3=new person("nandha","20")
+    console.log(person3);
+    
+    </script>
+</body>
+</html>

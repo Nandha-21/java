@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- session storage -->
+    <!-- <button onclick="demo1()">button</button> -->
+
+   Username: <input type="text" name="Username" id="Username" placeholder="Username"><br>
+   password: <input type="password" name="password" id="password" placeholder="password"><br>
+    <input type="button" value="Submit" onclick="click()">
+</body>
+<script>
+  function click(){
+    var username = document.getElementById("username").value    
+    localStorage.setItem ("username","nandha")
+
+  }
+
+
+    //local storage 
+                          // ( key , value)
+    // localStorage.setItem("name","nandha");
+    // console.log(localStorage.getItem("name"));
+    
+
+    //session storage
+    // function demo1(){
+    // sessionStorage.setItem("name","nandha");
+    // console.log(sessionStorage.getItem("name"));
+    // }
+
+    //cookies
+    // document.cookie="name=kumar";
+    // console.log(document.cookie);
+    
+
+</script>
+</html>

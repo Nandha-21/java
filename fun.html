@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dom - Document object model
+        type
+     doucment.getElementById 
+     doucment.getElementByTagname 
+     doucment.getElementByClassname
+     doucment.write()
+     
+     doucment.getElementById().style -->
+
+<input type="text" placeholder="Name"><br><br>
+<input type="number" id="age" placeholder="Age"><br><br>
+<input type="number" id="mark" placeholder=""><br><br>
+<input type="button" value="Submit" onclick="post()">
+
+     
+</body>
+<script>
+    function post(){
+        let age = document.getElementById("age").value
+        if(age>=18){
+            alert("eligible for voting")
+        }if(age<=60){
+            alert("eligible for voting")
+        }else{
+            alert("not eligible for voting")
+        }
+    }
+
+function post(){
+    var mark = document.getElementById("mark").value
+    var age = document.getElementById("age").value
+  
+    if(mark == ""){
+        document.getElementById("mark").style.borderColor ="red"
+    }if(age == ""){
+        document.getElementById("age").style.borderColor ="red"
+    }else{
+        document.getElementById("mark").style.borderColor ="green"
+        document.getElementById("age").style.borderColor ="green"
+
+    }
+
+}
+
+
+</script>
+</html>

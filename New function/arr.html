@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <form action="">
+        <input type="text" placeholder="Sometimes...." id="itemTxt">
+        <input type="button" value="add" onclick="addItem()"><br><br>
+         <input type="text" placeholder="type...." id="itemValue">
+        <input type="button" value="remove" onclick="removeItem()"><br><br>
+        <input type="button" value="Insert" onclick="insertItem()">
+      </form>
+       -->
+      
+      <input type="text" placeholder="year" id="dateTxt">
+      <input type="button" value="Cal" onclick="calculateDiff()">
+    
+</body>
+ <script>
+function calculateDiff(){         //use -- mm-date-yy
+  let d1 = new Date(Date.now())
+  let d2 = new Date(document.getElementById("dateTxt").value)
+  console.log(d1)
+  console.log(d2)
+  console.log(d1 - d2)
+}
+
+
+
+//    let list = []
+//    function addItem(){
+//   let value = document.getElementById("itemTxt").value
+//   let arr = [value]
+//   list = arr.concat(list)
+
+// //   list = [...list,value]          
+// console.log(list);
+// }
+
+//  function removeItem(){
+//  let value = document.getElementById("itemValue").value
+// list.splice(value,1)
+// console.log(list);
+
+// }
+  
+// function insertItem(){
+//   let text = document.getElementById("itemTxt").value
+//   let pos = document.getElementById("itemValue").value
+//   list.splice(pos,0,text)
+//   console.log(list);
+// }
+
+
+                              //date and time
+      // Epoch = 1 Jan 1900
+      
+    // const d = new Date (24 * 60 * 60 * 1000 * 4)    //h * m * s * ms * days
+    // console.log(d);
+
+    //  let t = new Date(Date.now())
+    // console.log(t.getYear());
+    // console.log(1900 + t.getYear());  //deprecated
+    // console.log(t.getFullYear());
+    // console.log(t.getMonth());
+    // console.log(t.getDate());
+    // console.log(t.getDay());
+    // console.log(t.getHours());
+
+
+    // let e = new Date(Date.now())
+    // console.log("locale" , e.toLocaleDateString());
+    // console.log("UTC" , e. toUTCString());
+    // console.log("ISO" , e.toISOString());
+ </script>
+
+</html>

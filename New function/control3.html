@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- 
+       Starting point ==> intilization
+       Steps  ==> increment/decrement 
+       Ending point  ==> condition 
+       -->
+       <div id="table-txt">
+
+       </div>
+</body>
+   <script>
+    // let i = 10
+    // while(i>=1){
+    //     console.log(i);
+    //     i--
+    // }
+
+    let i = 1
+    let txt = ''
+    while (i<=10){
+        // txt = txt + `${i} x 2 = ${i*2}<br>`
+             //  or
+         txt = txt + i + " X 2 = " + (i*2) + "<br>"
+         i++   
+    }
+    console.log(txt);
+    document.getElementById("table-txt").innerHTML = txt
+   </script>
+
+</html> 

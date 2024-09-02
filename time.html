@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="mystop()">stop the time</button>
+    <button onclick="start()">start the time</button>
+    <h1 style="font-family: cursive; color: red;" id="sample"></h1>
+<button onclick="myStopFunction()">STOP!</button>
+
+    <script>
+                //SET INTERVAL & CLEAR INTERVAL
+        const myInterval = setInterval(myStart,1000);
+
+        function myStart(){
+            const date = new Date();
+            document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+        }
+
+        function mystop(){
+            clearInterval(myInterval);
+        }
+        
+        function start(){
+            setInterval(myStart,1000);
+        }
+
+                //SET TIMEOUT & CLEAR TIMEOUT
+            const myTimeout = setTimeout(myGreeting,4000);
+            
+            function myGreeting(){
+                document.getElementById("sample").innerHTML = "happy death!"
+            }
+
+            function myStopFunction(){
+                clearTimeout(myTimeout);
+            }
+    </script>
+</body>
+</html>

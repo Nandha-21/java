@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- operators
+        arithmetic
+        comparison
+        assignment
+        bit-wise
+        
+        spread operators   (. . . )
+        const a = [1,2,3,4,5]
+        const b= a
+
+        ternary operators -->
+</body>
+<script>
+    //Arithmetic
+    let a = 10;
+    let b = 5;
+
+    console.log("addition: " + (a+b));
+    console.log("subtraction: " + (a-b));
+    console.log("multiplication: " + (a*b));
+    console.log("division: " + (a/b));
+    console.log("modulus: " + (a%b));
+    console.log("exponentiation: " + (a ** b));
+
+    //comparision
+    let x = 10;
+    let y = 20;
+
+    console.log("equal:" + (x==y));   //(only check the value)
+    console.log("not equal:" + (x!=y));
+    console.log("strict equal:" + (x===y));   //(check the value and datatype)
+    console.log("strict not equal:" + (x!==y));
+    console.log("greater than:" + (x>y));
+    console.log("less than:" + (x<y));
+    console.log("greater than: or equal" + (x>=y));
+    console.log("less than: or equal" + (x<=y));
+
+
+    //logical
+    let p = false;
+    let q = false;
+
+    console.log("AND:" + (p && q));
+    console.log("or:" + (p || q));
+    console.log("not:" + !p);
+    
+    //assignment
+    let num = 10;
+    num += 5; //num = num + 5
+    console.log("addition" + num);
+    
+    num -= 3; //num = num - 3
+    console.log("subtraction" + num);
+    
+    num *= 2; //num = num * 2
+    console.log("multiplication" + num);
+
+    num /= 4; //num = num / 4
+    console.log("division" + num);
+
+    num %= 3; //num = num % 5
+    console.log("modulus" + num);
+    
+    num **= 2; //num = num ** 2
+    console.log("exponentiation" + num);
+
+    
+    //ternary operator
+    //ternary operator to check the eligibility to vote
+    // let age = 21;
+    // let result = (age >=18) ? "you are eligible to vote ": "you are not eligible to vote yet"
+    // console.log(result);
+
+
+    //combining arrays
+    // const array1 = ["volvo","audi",1,2,3,];
+    // const array2 = [4,5,6]; 
+    // const combinedArray =[...array1, ...array2];
+    // console.log(combinedArray);
+    
+    
+    //using spread with function
+    // function sum(a,b,c){
+    //     return a + b + c;
+    // }
+    // const number1 = [1,2,3];
+    //using spread operator to pass arrays element as individual argument
+    // const result1 = sum(...number1);
+    // console.log(result1);
+    
+
+    //spreding objects
+    // const obj1 = {a:1, b:2};
+    // const obj2 = {c:3, d:4};
+    // const combinedObj = {...obj1, ...obj2};
+    // console.log(combinedObj);
+
+
+    //adding element to arrays
+    // const arr1 = [1,2,3,4,5,6,7];
+    // const newarr1 = [0, ...arr1,8,9] 
+    // console.log(newarr1);
+       
+
+    
+
+</script>
+</html>
